@@ -1,0 +1,16 @@
+<html>
+    <head>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='login.css') }}"/>
+    </head>
+    <body>
+        <div class="login">
+            <h1>Profile</h1>
+            <h1>Phone: "{{ data['phone'] }}"</h1>
+            <h1>Password: "{{ data['password'] }}"</h1>
+            <h1>openid: "{{ data['openid'] }}"</h1>
+                <form method="get" action='/'>
+                  <button type="submit" class="btn btn-primary btn-block btn-large">Home</button>
+                </form>
+          </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='login.css') }}"/>
+    </head>
+    <body>
+        <div class="login">
+            <h1>Home</h1>
+                <!--form method='post' action='/get_code'>
+                  <input type="text" name="phone_number" placeholder="Phone Number" required="required" />
+                  <button type='submit' class="btn btn-primary btn-block btn-large">Send Code</button!-->
+                  <!--a href="" class="btn btn-primary btn-block btn-large">Send Code</a!-->
+                <!--/form!-->
+                <form method="get" action='/register'>
+                  <button type="submit" class="btn btn-primary btn-block btn-large">Register</button>
+                </form>
+                <form method="get" action='/login'>
+                  <button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+                </form>
+              <!--form action='/get_code' method='post'>
+                <button type='submit' class="btn btn-primary btn-block btn-large">Send Code</button>
+              </form!-->
+          </div>
+    </body>
+</html>
